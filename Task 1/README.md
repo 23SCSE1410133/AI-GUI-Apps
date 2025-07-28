@@ -1,4 +1,4 @@
-# 🌐 Language Translation Tool
+# Task 1- 🌐 Language Translation Tool
 
 A simple and powerful language translator desktop application built using Python and Tkinter. This tool uses the **Google Translate API** (via `deep-translator`) to convert text from one language to another, with additional features like **text-to-speech** and **copy to clipboard**.
 
