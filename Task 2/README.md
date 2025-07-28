@@ -1,4 +1,4 @@
-# Task 2: Chatbot
+# Task 2: Chatbot🤖
 
 This project showcases **three different chatbot implementations** developed in Python using GPT-powered responses via the `g4f` API. Each bot is uniquely styled and serves different purposes — from emotional conversations to direct AI FAQs and simple command-line queries.
 
