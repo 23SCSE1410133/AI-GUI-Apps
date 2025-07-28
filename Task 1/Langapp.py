@@ -1,13 +1,27 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
-from googletrans import Translator, LANGUAGES
+from deep_translator import GoogleTranslator
 from gtts import gTTS
 import pyperclip
 import os
 from playsound import playsound
 
-# Initialize translator
-translator = Translator()
+# Language codes for gTTS (must be ISO 639-1 codes)
+lang_codes = {
+    "English": "en",
+    "Hindi": "hi",
+    "Spanish": "es",
+    "French": "fr",
+    "German": "de",
+    "Italian": "it",
+    "Bengali": "bn",
+    "Chinese": "zh-CN",
+    "Japanese": "ja",
+    "Korean": "ko",
+    "Russian": "ru",
+    "Arabic": "ar",
+    "Portuguese": "pt"
+}
 
 # Setup GUI window
 root = tk.Tk()
@@ -26,13 +40,10 @@ def translate_text():
             messagebox.showwarning("Warning", "Please enter some text.")
             return
 
-        translated = translator.translate(
-            text=input_text,
-            src=lang_codes[src],
-            dest=lang_codes[dest]
-        )
+        translated = GoogleTranslator(source=src.lower(), target=dest.lower()).translate(text=input_text)
+
         translated_text.delete("1.0", tk.END)
-        translated_text.insert(tk.END, translated.text)
+        translated_text.insert(tk.END, translated)
 
     except Exception as e:
         messagebox.showerror("Translation Error", str(e))
@@ -48,7 +59,7 @@ def copy_text():
 def speak_text():
     output = translated_text.get("1.0", tk.END).strip()
     if output:
-        lang = lang_codes[target_lang.get()]
+        lang = lang_codes.get(target_lang.get(), "en")
         try:
             tts = gTTS(text=output, lang=lang)
             tts.save("temp.mp3")
@@ -67,9 +78,7 @@ source_text.place(x=30, y=50)
 translated_text = tk.Text(root, height=10, width=30, font=("Arial", 12))
 translated_text.place(x=370, y=50)
 
-# Dropdowns for languages
-lang_codes = {name.title(): code for code, name in LANGUAGES.items()}
-language_list = sorted(lang_codes.keys())
+language_list = list(lang_codes.keys())
 
 source_lang = ttk.Combobox(root, values=language_list, width=25)
 source_lang.place(x=100, y=250)
