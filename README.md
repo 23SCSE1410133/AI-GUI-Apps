@@ -68,6 +68,6 @@ Each project is fully functional, well-documented, and ready for demonstration.
 
 **Anushka Sharma**  
 BTech CSE (AI)  
-🌐 [LinkedIn](www.linkedin.com/in/anushka-sharma-19772005r) *
-
+🌐 [LinkedIn](www.linkedin.com/in/anushka-sharma-19772005r) 
+✨ [Email](anushkasharma09812@gmail.com)
 ---
