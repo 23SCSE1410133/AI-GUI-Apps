@@ -37,6 +37,7 @@ This project showcases **three different chatbot implementations** developed in 
 - Ideal for: Developers testing GPT logic, CLI users
 
 ---
+## ✨Made By Anushka Sharma✨
 
 ## 🔧 Requirements
 
