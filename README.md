@@ -1,4 +1,4 @@
-# CodAlpha_Tasks
+# AI_app_Tasks
 ---
 Welcome to the official repository for my **CodeAlpha Artificial Intelligence Internship – July-August Batch**.  
 This repository contains the completed solutions for all three assigned tasks, developed using Python and various modern libraries for AI, GUI, and Computer Vision.
