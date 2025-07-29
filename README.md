@@ -1,7 +1,7 @@
 # AI_app_Tasks
 ---
-Welcome to the official repository for my **CodeAlpha Artificial Intelligence Internship – July-August Batch**.  
-This repository contains the completed solutions for all three assigned tasks, developed using Python and various modern libraries for AI, GUI, and Computer Vision.
+
+This repository contains the completed solutions for all three GUI Apps integrated by AI, developed using Python and various modern libraries for AI, GUI, and Computer Vision.
 
 Each task is organized in its own folder with full source code, README, and requirements for easy execution.
 
@@ -58,9 +58,9 @@ This application combines YOLOv5u for object detection and Deep SORT for real-ti
 * `tkinter`: For the GUI elements (buttons, video display).
 * `Pillow` (`PIL`): For image manipulation within the Tkinter GUI.
 ---
-## ✅ Internship Completion
+## ✅ Three GUI Apps Completion
 
-All tasks were completed as part of the **CodAlpha July-August Internship Program 2025**.  
+
 Each project is fully functional, well-documented, and ready for demonstration.
 
 ---
